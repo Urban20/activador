@@ -4,9 +4,9 @@ import platform,os,time
 def comando(codigo,version,windows):
     print(f'windows:{windows}, version:{version}')
     os.system(f'slmgr /ipk {codigo}')
-    time.sleep(10)
+    time.sleep(5)
     os.system('slmgr /skms kms.digiboy.ir')
-    time.sleep(10)
+    time.sleep(5)
     os.system('slmgr /ato')
     
 
